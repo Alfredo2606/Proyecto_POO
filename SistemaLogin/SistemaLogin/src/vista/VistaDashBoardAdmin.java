@@ -31,6 +31,7 @@ public class VistaDashBoardAdmin extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         btnUsuarios = new javax.swing.JButton();
         btnRolUsuario = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         panelEncabezado = new javax.swing.JPanel();
         panelContenedor = new javax.swing.JPanel();
 
@@ -70,6 +71,17 @@ public class VistaDashBoardAdmin extends javax.swing.JFrame {
         btnRolUsuario.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
         panelMenu.add(btnRolUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 200, -1));
 
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/carrito.png"))); // NOI18N
+        jButton1.setText("Productos");
+        jButton1.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        panelMenu.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 200, -1));
+
         getContentPane().add(panelMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         panelEncabezado.setBackground(new java.awt.Color(0, 204, 204));
@@ -99,6 +111,10 @@ public class VistaDashBoardAdmin extends javax.swing.JFrame {
     private void btnUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuariosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnUsuariosActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -138,6 +154,7 @@ public class VistaDashBoardAdmin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnRolUsuario;
     public javax.swing.JButton btnUsuarios;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JSeparator jSeparator1;
     public javax.swing.JPanel panelContenedor;
