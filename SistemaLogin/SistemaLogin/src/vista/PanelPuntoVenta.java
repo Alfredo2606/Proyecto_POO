@@ -28,7 +28,7 @@ public class PanelPuntoVenta extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
         btnNuevo = new javax.swing.JButton();
-        btnGenerarVneta = new javax.swing.JButton();
+        btnGenerarVenta = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         txtIDProducto = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -58,16 +58,16 @@ public class PanelPuntoVenta extends javax.swing.JPanel {
         });
         add(btnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, -1));
 
-        btnGenerarVneta.setBackground(new java.awt.Color(30, 124, 221));
-        btnGenerarVneta.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnGenerarVneta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/ventas.png"))); // NOI18N
-        btnGenerarVneta.setText("Generar Venta");
-        btnGenerarVneta.addActionListener(new java.awt.event.ActionListener() {
+        btnGenerarVenta.setBackground(new java.awt.Color(30, 124, 221));
+        btnGenerarVenta.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnGenerarVenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/ventas.png"))); // NOI18N
+        btnGenerarVenta.setText("Generar Venta");
+        btnGenerarVenta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGenerarVnetaActionPerformed(evt);
+                btnGenerarVentaActionPerformed(evt);
             }
         });
-        add(btnGenerarVneta, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, -1, -1));
+        add(btnGenerarVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("ID Producto");
@@ -126,22 +126,22 @@ public class PanelPuntoVenta extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTotalActionPerformed
 
-    private void btnGenerarVnetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarVnetaActionPerformed
+    private void btnGenerarVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarVentaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGenerarVnetaActionPerformed
+    }//GEN-LAST:event_btnGenerarVentaActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnGenerarVneta;
-    private javax.swing.JButton btnNuevo;
+    public javax.swing.JButton btnGenerarVenta;
+    public javax.swing.JButton btnNuevo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tblDatos;
-    private javax.swing.JTextField txtIDProducto;
+    public javax.swing.JTable tblDatos;
+    public javax.swing.JTextField txtIDProducto;
     private javax.swing.JTextField txtIVA;
     private javax.swing.JTextField txtSubtotal;
     private javax.swing.JTextField txtTotal;

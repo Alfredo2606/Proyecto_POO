@@ -13,7 +13,9 @@ import java.util.ArrayList;
 public interface CRUDInterface {
     public boolean insertar();//create
     public ArrayList buscar();//Read
+    public ArrayList buscarPorID();//Read
     public boolean buscarPorId (int id);//Read
     public boolean modificar(int id);//upDate
     public boolean eliminar (int id);//delate
+    
 }
