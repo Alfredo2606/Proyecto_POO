@@ -65,7 +65,7 @@ public class VistaLogin extends javax.swing.JFrame {
         });
         jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, 380, 40));
 
-        btnIniciar.setBackground(new java.awt.Color(112, 153, 255));
+        btnIniciar.setBackground(new java.awt.Color(255, 255, 153));
         btnIniciar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnIniciar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/iniciar.png"))); // NOI18N
         btnIniciar.setText("Iniciar");
@@ -76,10 +76,15 @@ public class VistaLogin extends javax.swing.JFrame {
         });
         jPanel1.add(btnIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 470, 150, 40));
 
-        btnCancelar.setBackground(new java.awt.Color(112, 153, 255));
+        btnCancelar.setBackground(new java.awt.Color(255, 255, 153));
         btnCancelar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/cancelar.png"))); // NOI18N
         btnCancelar.setText("Cancelar");
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 470, 180, 40));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -111,6 +116,10 @@ public class VistaLogin extends javax.swing.JFrame {
     private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPasswordActionPerformed
+
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelarActionPerformed
 
     /**
      * @param args the command line arguments

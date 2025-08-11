@@ -16,4 +16,5 @@ public interface CRUDInterface {
     public boolean buscarPorId (int id);//Read
     public boolean modificar(int id);//upDate
     public boolean eliminar (int id);//delate
+    
 }
