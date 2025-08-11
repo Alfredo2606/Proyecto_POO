@@ -41,6 +41,8 @@ public class controladorDashBoardAdmin {
         this.vista.btnUsuarios.addActionListener(e->mostrarPanelUsuarios());
         //EVENTO PARA EL BOTON DEL ROL USUARIO
         this.vista.btnRolUsuario.addActionListener(e->mostrarPanelRolUsuario());
+        //evento para el boton productos
+        this.vista.btnProductos.addActionListener(e->mostrarPanelProductos());
     }
     //metodo para mostrar el panel usuarios
     public void mostrarPanelRolUsuario(){
@@ -73,7 +75,21 @@ public class controladorDashBoardAdmin {
         
     
     }
+    //metodo para mostrar el panel usuarios
+    public void mostrarPanelProductos(){
+        //crear el objeto del controlador del panel usuario
+        controladorPanelProductos controladorpanelProductos = new controladorPanelProductos();
+        controladorpanelProductos.getVista().setSize(800,560);
+        controladorpanelProductos.getVista().setLocation(0, 0);
+        
+        //agregar el panel usuarios al panel contenedor
+        this.vista.panelContenedor.removeAll();
+        this.vista.panelContenedor.add(controladorpanelProductos.getVista());
+        this.vista.panelContenedor.revalidate();
+        this.vista.panelContenedor.repaint();
+        
     
+    }    
     //metodo main
     public static void main(String[] args) {
         //crear controlador
