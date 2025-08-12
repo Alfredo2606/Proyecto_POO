@@ -142,8 +142,8 @@ public class PanelPuntoVenta extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JTable tblDatos;
     public javax.swing.JTextField txtIDProducto;
-    private javax.swing.JTextField txtIVA;
-    private javax.swing.JTextField txtSubtotal;
-    private javax.swing.JTextField txtTotal;
+    public javax.swing.JTextField txtIVA;
+    public javax.swing.JTextField txtSubtotal;
+    public javax.swing.JTextField txtTotal;
     // End of variables declaration//GEN-END:variables
 }

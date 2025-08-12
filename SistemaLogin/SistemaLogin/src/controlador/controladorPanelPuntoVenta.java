@@ -7,7 +7,6 @@ package controlador;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import modelo.PuntoVenta;
-import modelo.RolUsuario;
 import vista.PanelPuntoVenta;
 
 /**
@@ -27,6 +26,7 @@ public class controladorPanelPuntoVenta {
         //Crear los objetos
         this.vista = new PanelPuntoVenta();
         this.modelo = new PuntoVenta();
+         inicializarTabla();
         
     }
     
@@ -53,10 +53,13 @@ public class controladorPanelPuntoVenta {
          //evento para el boton buscar
       this.vista.btnNuevo.addActionListener(e -> buscarId());
         //evento para el botón nuevo
-       //this.vista.btnGenerarVenta.addActionListener(e -> nuevo());
+       this.vista.btnGenerarVenta.addActionListener(e -> generarVenta());
+
            
         
     }
+    
+    
     
     private DefaultTableModel modeloTabla;
 
@@ -67,12 +70,10 @@ private void inicializarTabla() {
     ) {
         @Override
         public boolean isCellEditable(int row, int column) {
-            // Solo permitir edición en la columna de Cantidad (índice 1)
-            return column == 1;
+            return column == 1; // Solo permitir edición en la columna Cantidad
         }
     };
 
-    
     // Asignar el modelo a la JTable
     this.vista.tblDatos.setModel(modeloTabla);
 
@@ -81,41 +82,34 @@ private void inicializarTabla() {
         int fila = e.getFirstRow();
         int columna = e.getColumn();
 
-        if (columna == 1) { // si se modificó la cantidad
+        if (columna == 1) { 
             try {
                 int cantidad = Integer.parseInt(modeloTabla.getValueAt(fila, 1).toString());
                 double precio = Double.parseDouble(modeloTabla.getValueAt(fila, 2).toString());
-                
+                modeloTabla.setValueAt(cantidad * precio, fila, 3);
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(this.vista, "Cantidad inválida");
-                modeloTabla.setValueAt(1, fila, 1); // reset a cantidad 1
+                modeloTabla.setValueAt(1, fila, 1); 
             }
         }
     });
 }
 
-// Método para buscar producto y agregarlo a la tabla
+
+
 private void buscarId() {
     try {
-        // Obtener el ID del producto escrito en la vista
         int idProducto = Integer.parseInt(this.vista.txtIDProducto.getText());
         this.modelo.setIdProducto(idProducto);
 
-        // Buscar el producto
         if (this.modelo.buscarPorId(idProducto)) {
-            // Agregar a la tabla
             modeloTabla.addRow(new Object[]{
                 this.modelo.getNombre(),
-                1, // cantidad por defecto
+                1, 
                 this.modelo.getPrecio(),
-                this.modelo.getPrecio() // total inicial
+                this.modelo.getPrecio()
             });
-
-            // Limpiar el campo de texto del ID
             this.vista.txtIDProducto.setText("");
-            
-            
-
         } else {
             JOptionPane.showMessageDialog(this.vista, "El producto no se encontró...");
         }
@@ -124,9 +118,10 @@ private void buscarId() {
         JOptionPane.showMessageDialog(this.vista, "Ingrese un ID válido");
     }
 }
+
     
 //metodo para llenar tabla usuarios
-      public void LlenarTablaRolUsuarios(){
+      public void LlenarTablaPuntoVenta(){
           this.vista.tblDatos.setModel(obtenerDatosRolUsuarios());
       }
      //metodo para obtener los datos de usuario
@@ -164,11 +159,38 @@ private void buscarId() {
     }
 }
 
+    private void generarVenta() {
+    double subtotal = 0.0;
+    double iva = 0.0;
+    double totalFinal = 0.0;
+    double tasaIVA = 0.16; // 16% IVA
+
+    // Sumar todos los totales de la tabla
+    for (int i = 0; i < modeloTabla.getRowCount(); i++) {
+        double totalFila = Double.parseDouble(modeloTabla.getValueAt(i, 3).toString());
+        subtotal += totalFila;
+    }
+
+    // Calcular IVA y Total
+    iva = subtotal * tasaIVA;
+    totalFinal = subtotal + iva;
+
+    this.vista.txtSubtotal.setText(String.format("%.2f", subtotal));
+    this.vista.txtIVA.setText(String.format("%.2f", iva));
+    this.vista.txtTotal.setText(String.format("%.2f", totalFinal));
+
+    
+}
+
      //metodo para limpiar las cajas de texto
     public void limpiarCajasTexto(){
         this.vista.txtIDProducto.setText("");
       
     }
+
+    public static void main(String[] args) {
+    // Código que se ejecuta al iniciar el programa
+}
 
    
 }
