@@ -113,8 +113,8 @@ public class PuntoVenta extends ConexionBD implements CRUDInterface{
                     PuntoVenta.idProducto = this.result.getInt(1);
                     PuntoVenta.nombre = this.result.getString(2);
                     PuntoVenta.cantidad = this.result.getInt(3);
-                    PuntoVenta.precio = this.result.getByte(4);
-                    PuntoVenta.total = this.result.getByte(5);
+                    PuntoVenta.precio = this.result.getDouble(4);
+                    PuntoVenta.total = this.result.getDouble(5);
                     
                    
                     //agregar el objeto usuario a la lista
@@ -145,7 +145,7 @@ public class PuntoVenta extends ConexionBD implements CRUDInterface{
             try {
              
                 //Llamar el procedimiento almacenado
-                this.cstmt=super.getConexion().prepareCall("call bd_sistema_login.sp_buscar_rol_usuario_id(?);");
+                this.cstmt=super.getConexion().prepareCall("call bd_sistema_login.sp_puntoDeVenta(?);");
                 this.cstmt.setInt(1, idProducto);
                 
                 //ejecutar consulta
@@ -155,8 +155,9 @@ public class PuntoVenta extends ConexionBD implements CRUDInterface{
                     this.idProducto = this.result.getInt(1);
                     this.nombre = this.result.getString(2);
                     this.cantidad = this.result.getInt(3);
-                    this.precio= this.result.getByte(4);
-                    this.total = this.result.getByte(5);
+                    this.precio = this.result.getDouble(4);
+                   this.total = this.result.getDouble(5);
+
                   
                 }
                 

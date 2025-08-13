@@ -27,6 +27,7 @@ public class controladorPanelPuntoVenta {
         this.vista = new PanelPuntoVenta();
         this.modelo = new PuntoVenta();
          inicializarTabla();
+         manejadorEventos();
         
     }
     
@@ -117,6 +118,7 @@ private void buscarId() {
     } catch (NumberFormatException e) {
         JOptionPane.showMessageDialog(this.vista, "Ingrese un ID válido");
     }
+   
 }
 
     
