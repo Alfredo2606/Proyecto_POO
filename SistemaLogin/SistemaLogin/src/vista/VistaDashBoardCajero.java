@@ -28,6 +28,8 @@ public class VistaDashBoardCajero extends javax.swing.JFrame {
 
         panelMenu = new javax.swing.JPanel();
         btnGenerarVenta = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
         panelEncabezado = new javax.swing.JPanel();
         panelContenedor = new javax.swing.JPanel();
 
@@ -37,8 +39,23 @@ public class VistaDashBoardCajero extends javax.swing.JFrame {
         panelMenu.setBackground(new java.awt.Color(0, 153, 153));
         panelMenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnGenerarVenta.setText("jButton1");
-        panelMenu.add(btnGenerarVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 142, -1, -1));
+        btnGenerarVenta.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnGenerarVenta.setText("Generar Venta");
+        btnGenerarVenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGenerarVentaActionPerformed(evt);
+            }
+        });
+        panelMenu.add(btnGenerarVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 200, 40));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/java.png"))); // NOI18N
+        jLabel1.setText("APP LOGIN");
+        panelMenu.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+
+        jSeparator1.setPreferredSize(new java.awt.Dimension(200, 10));
+        panelMenu.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 230, -1));
 
         getContentPane().add(panelMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 640));
 
@@ -74,6 +91,10 @@ public class VistaDashBoardCajero extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnGenerarVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarVentaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGenerarVentaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -112,6 +133,8 @@ public class VistaDashBoardCajero extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnGenerarVenta;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JSeparator jSeparator1;
     public javax.swing.JPanel panelContenedor;
     public javax.swing.JPanel panelEncabezado;
     public javax.swing.JPanel panelMenu;
