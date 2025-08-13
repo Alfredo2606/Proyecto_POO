@@ -56,7 +56,7 @@ public class PanelPuntoVenta extends javax.swing.JPanel {
                 btnNuevoActionPerformed(evt);
             }
         });
-        add(btnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, -1));
+        add(btnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, -1, -1));
 
         btnGenerarVenta.setBackground(new java.awt.Color(30, 124, 221));
         btnGenerarVenta.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -67,14 +67,14 @@ public class PanelPuntoVenta extends javax.swing.JPanel {
                 btnGenerarVentaActionPerformed(evt);
             }
         });
-        add(btnGenerarVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, -1, -1));
+        add(btnGenerarVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("ID Producto");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 157, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
 
         txtIDProducto.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        add(txtIDProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(141, 154, -1, -1));
+        add(txtIDProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, 130, -1));
 
         tblDatos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -89,25 +89,25 @@ public class PanelPuntoVenta extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblDatos);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 205, 760, 231));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 760, 231));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setText("Subtotal:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 480, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 430, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel4.setText("IVA:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 520, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 470, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setText("Total:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 560, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 510, -1, -1));
 
         txtSubtotal.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        add(txtSubtotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(711, 478, -1, -1));
+        add(txtSubtotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 430, 130, -1));
 
         txtIVA.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        add(txtIVA, new org.netbeans.lib.awtextra.AbsoluteConstraints(711, 518, -1, -1));
+        add(txtIVA, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 470, 130, -1));
 
         txtTotal.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtTotal.addActionListener(new java.awt.event.ActionListener() {
@@ -115,7 +115,7 @@ public class PanelPuntoVenta extends javax.swing.JPanel {
                 txtTotalActionPerformed(evt);
             }
         });
-        add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(711, 558, -1, -1));
+        add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 510, 130, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
