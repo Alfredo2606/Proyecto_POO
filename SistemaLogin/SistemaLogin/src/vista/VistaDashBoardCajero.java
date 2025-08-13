@@ -34,7 +34,7 @@ public class VistaDashBoardCajero extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelMenu.setBackground(new java.awt.Color(153, 0, 153));
+        panelMenu.setBackground(new java.awt.Color(0, 153, 153));
         panelMenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnGenerarVenta.setText("jButton1");
@@ -42,7 +42,7 @@ public class VistaDashBoardCajero extends javax.swing.JFrame {
 
         getContentPane().add(panelMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 640));
 
-        panelEncabezado.setBackground(new java.awt.Color(255, 204, 204));
+        panelEncabezado.setBackground(new java.awt.Color(0, 204, 204));
 
         javax.swing.GroupLayout panelEncabezadoLayout = new javax.swing.GroupLayout(panelEncabezado);
         panelEncabezado.setLayout(panelEncabezadoLayout);

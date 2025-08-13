@@ -2,16 +2,17 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-<<<<<<< HEAD
         <group>
-            <file>file:/C:/Proyecto_Poo/SistemaLogin/SistemaLogin/src/modelo/Productos.java</file>
-            <file>file:/C:/Proyecto_Poo/SistemaLogin/SistemaLogin/src/controlador/controladorDashBoardAdmin.java</file>
-            <file>file:/C:/Proyecto_Poo/SistemaLogin/SistemaLogin/src/controlador/controladorPanelProductos.java</file>
-            <file>file:/C:/Proyecto_Poo/SistemaLogin/SistemaLogin/src/vista/PanelPuntoVenta.java</file>
-            <file>file:/C:/Proyecto_Poo/SistemaLogin/SistemaLogin/src/controlador/controladorPanelUsuario.java</file>
+            <file>file:/C:/PuntoVenta/Proyecto_POO/SistemaLogin/SistemaLogin/src/vista/PanelPuntoVenta.java</file>
+            <file>file:/C:/PuntoVenta/Proyecto_POO/SistemaLogin/SistemaLogin/src/vista/VistaLogin.java</file>
+            <file>file:/C:/PuntoVenta/Proyecto_POO/SistemaLogin/SistemaLogin/src/vista/PanelRolUsuario.java</file>
+            <file>file:/C:/PuntoVenta/Proyecto_POO/SistemaLogin/SistemaLogin/src/vista/VistaDashBoardAdmin.java</file>
+            <file>file:/C:/PuntoVenta/Proyecto_POO/SistemaLogin/SistemaLogin/src/modelo/RolUsuario.java</file>
+            <file>file:/C:/PuntoVenta/Proyecto_POO/SistemaLogin/SistemaLogin/src/modelo/PuntoVenta.java</file>
+            <file>file:/C:/PuntoVenta/Proyecto_POO/SistemaLogin/SistemaLogin/src/modelo/Productos.java</file>
+            <file>file:/C:/PuntoVenta/Proyecto_POO/SistemaLogin/SistemaLogin/src/controlador/controladorPanelPuntoVenta.java</file>
+            <file>file:/C:/PuntoVenta/Proyecto_POO/SistemaLogin/SistemaLogin/src/vista/PanelProductos.java</file>
+            <file>file:/C:/PuntoVenta/Proyecto_POO/SistemaLogin/SistemaLogin/src/controlador/controladorPanelProductos.java</file>
         </group>
-=======
-        <group/>
->>>>>>> 1ec8a018092f2457cd42b94db1f9519f45c29827
     </open-files>
 </project-private>
