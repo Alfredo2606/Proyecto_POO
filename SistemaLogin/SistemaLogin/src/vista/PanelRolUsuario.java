@@ -48,7 +48,7 @@ public class PanelRolUsuario extends javax.swing.JPanel {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnRegistrar.setBackground(new java.awt.Color(255, 255, 204));
+        btnRegistrar.setBackground(new java.awt.Color(0, 204, 204));
         btnRegistrar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/registrar.png"))); // NOI18N
         btnRegistrar.setText("Registrar");
@@ -60,7 +60,7 @@ public class PanelRolUsuario extends javax.swing.JPanel {
         });
         add(btnRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        btnEditar.setBackground(new java.awt.Color(255, 255, 204));
+        btnEditar.setBackground(new java.awt.Color(0, 204, 204));
         btnEditar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/editar.png"))); // NOI18N
         btnEditar.setText("Editar ");
@@ -72,7 +72,7 @@ public class PanelRolUsuario extends javax.swing.JPanel {
         });
         add(btnEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, -1, -1));
 
-        btnBuscar.setBackground(new java.awt.Color(255, 255, 204));
+        btnBuscar.setBackground(new java.awt.Color(0, 204, 204));
         btnBuscar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/buscar.png"))); // NOI18N
         btnBuscar.setText("Buscar");
@@ -84,7 +84,7 @@ public class PanelRolUsuario extends javax.swing.JPanel {
         });
         add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, -1, -1));
 
-        btnEliminar.setBackground(new java.awt.Color(255, 255, 204));
+        btnEliminar.setBackground(new java.awt.Color(0, 204, 204));
         btnEliminar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/eliminar.png"))); // NOI18N
         btnEliminar.setText("Eliminar");
@@ -96,14 +96,14 @@ public class PanelRolUsuario extends javax.swing.JPanel {
         });
         add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, -1, -1));
 
-        btnNuevo.setBackground(new java.awt.Color(255, 255, 204));
+        btnNuevo.setBackground(new java.awt.Color(0, 204, 204));
         btnNuevo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnNuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/nuevo.png"))); // NOI18N
         btnNuevo.setText("Nuevo");
         btnNuevo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         add(btnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, -1, -1));
 
-        btnSalir.setBackground(new java.awt.Color(255, 255, 204));
+        btnSalir.setBackground(new java.awt.Color(0, 204, 204));
         btnSalir.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/salir.png"))); // NOI18N
         btnSalir.setText("Salir");

@@ -4,9 +4,7 @@
  */
 package controlador;
 
-import javax.swing.JOptionPane;
 import modelo.Login;
-import vista.VistaDashBoardAdmin;
 import vista.VistaLogin;
 
 /**
@@ -38,13 +36,14 @@ public class controladorVistaLogin {
         //Entrada de datos
         String user=this.vista.txtUsuario.getText();
         String password=String.valueOf(this.vista.txtPassword.getPassword());
-        String typeUser="admin";
+        //String typeUser="admin";
         
         this.modelo.getUsuario().setNombreUsuario(user);
         this.modelo.setPasswordLogin(password);
-        this.modelo.getRolUsuario().setTipoRolUsuario(typeUser);
+        //this.modelo.getRolUsuario().setTipoRolUsuario(typeUser);
+        
         //Validar login
-        if (this.modelo.validarLogin()) {
+        if (this.modelo.validarLogin()&& this.modelo.getRolUsuario().getTipoRolUsuario().equals("admin")) {
             //JOptionPane.showMessageDialog(this.vista, "Usuario y/o Password Correctos");
             //Crear objeto de la vista DashBoaardAdmin
             controladorDashBoardAdmin vistaDashBoardAdmin=new controladorDashBoardAdmin();
@@ -55,19 +54,19 @@ public class controladorVistaLogin {
             //Ocultar la vista de Login
             this.vista.dispose();
             
-       
+        } else if (this.modelo.validarLogin()&& this.modelo.getRolUsuario().getTipoRolUsuario().equals("cajero")){
+            //Crear objeto de DashBoardAdmin
+            controladorDashBoardCajero dashBoardPuntoVenta = new controladorDashBoardCajero();
+            dashBoardPuntoVenta.getVista().setVisible(true);
+            dashBoardPuntoVenta.getVista().setLocationRelativeTo(null);
             
-        } else {
-            JOptionPane.showMessageDialog(this.vista, "Usuario y/o Password Incorrectos");
-        }
-                
+            this.vista.dispose();
+        }                
     }
     
     //Metodo principal main
     public static void main(String[] args) {
         controladorVistaLogin controlador=new controladorVistaLogin();
         controlador.vista.setVisible(true);
-    }
-    
-    
+    }   
 }

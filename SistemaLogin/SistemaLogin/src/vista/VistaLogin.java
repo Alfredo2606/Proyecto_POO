@@ -65,7 +65,7 @@ public class VistaLogin extends javax.swing.JFrame {
         });
         jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, 380, 40));
 
-        btnIniciar.setBackground(new java.awt.Color(153, 255, 255));
+        btnIniciar.setBackground(new java.awt.Color(0, 204, 204));
         btnIniciar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnIniciar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/iniciar.png"))); // NOI18N
         btnIniciar.setText("Iniciar");

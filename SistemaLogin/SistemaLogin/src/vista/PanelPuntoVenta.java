@@ -47,7 +47,7 @@ public class PanelPuntoVenta extends javax.swing.JPanel {
         jLabel1.setText("Punto de Venta ");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 17, -1, -1));
 
-        btnNuevo.setBackground(new java.awt.Color(30, 124, 221));
+        btnNuevo.setBackground(new java.awt.Color(0, 204, 204));
         btnNuevo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnNuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/nuevo.png"))); // NOI18N
         btnNuevo.setText("Nuevo");
@@ -58,7 +58,7 @@ public class PanelPuntoVenta extends javax.swing.JPanel {
         });
         add(btnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, -1, -1));
 
-        btnGenerarVenta.setBackground(new java.awt.Color(30, 124, 221));
+        btnGenerarVenta.setBackground(new java.awt.Color(0, 204, 204));
         btnGenerarVenta.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnGenerarVenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/ventas.png"))); // NOI18N
         btnGenerarVenta.setText("Generar Venta");
