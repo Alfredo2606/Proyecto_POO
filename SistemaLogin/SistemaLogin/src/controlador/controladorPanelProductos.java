@@ -69,11 +69,12 @@ public class controladorPanelProductos {
     private void registrar() {
 //JOptionPane.showMessageDialog(this.vista,"Registrar Usuario");
         //Optener los datos de la vista y agregarlos al modelo
-        this.modelo.setNombreProducto(this.vista.txtNombreProducto.getText());
         this.modelo.setIdProducto(Integer.parseInt(this.vista.txtIdProducto.getText()));
+        this.modelo.setNombreProducto(this.vista.txtNombreProducto.getText());
+         this.modelo.setDescripcionProducto(this.vista.txtDescripcionProducto.getText());
+         this.modelo.setStockProducto(Integer.parseInt(this.vista.txtStockProducto.getText()));
         this.modelo.setPrecioProducto(Double.parseDouble(this.vista.txtPrecioProducto.getText()));
-        this.modelo.setStockProducto(Integer.parseInt(this.vista.txtStockProducto.getText()));
-        this.modelo.setDescripcionProducto(this.vista.txtDescripcionProducto.getText());
+        
         
         if (this.modelo.insertar()) {
             JOptionPane.showMessageDialog(this.vista, "Los datos del usuario se guardaron correctamente");
