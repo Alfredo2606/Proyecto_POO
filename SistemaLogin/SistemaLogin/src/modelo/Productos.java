@@ -100,9 +100,11 @@ public class Productos extends ConexionBD implements CRUDInterface {
                 this.cstmt=super.getConexion().prepareCall("call bd_sistema_login.sp_insertar_producto(?, ?, ?, ?, ?);");
                 this.cstmt.setInt(1, this.idProducto);
                 this.cstmt.setString(2,this.nombreProducto);
-                this.cstmt.setDouble(3, this.precioProducto);
+                this.cstmt.setString(3, this.descripcionProducto);
                 this.cstmt.setInt(4,this.stockProducto);
-                this.cstmt.setString(5, this.descripcionProducto);
+                this.cstmt.setDouble(5, this.precioProducto);
+                
+                
                 
                 //ejecutar el procedimiento almacenado
                 this.cstmt.execute();
@@ -141,9 +143,9 @@ public class Productos extends ConexionBD implements CRUDInterface {
                    
                    producto.idProducto = this.resultado.getInt(1);
                    producto.nombreProducto=this.resultado.getString(2);
-                   producto.precioProducto=this.resultado.getDouble(3);
+                   producto.descripcionProducto=this.resultado.getString(3);
                    producto.stockProducto=this.resultado.getInt(4);
-                   producto.descripcionProducto=this.resultado.getString(5);
+                   producto.precioProducto=this.resultado.getDouble(5);
                  
                    
                    //Agregar el objeto usuario a la lista
@@ -184,9 +186,9 @@ public class Productos extends ConexionBD implements CRUDInterface {
                 while (this.resultado.next()) {
                    this.idProducto = this.resultado.getInt(1);
                    this.nombreProducto=this.resultado.getString(2);
-                   this.precioProducto=this.resultado.getDouble(3);
+                   this.descripcionProducto=this.resultado.getString(3);
                    this.stockProducto=this.resultado.getInt(4);
-                   this.descripcionProducto=this.resultado.getString(5);
+                   this.precioProducto=this.resultado.getDouble(5);
                    
                     
                 }
@@ -219,9 +221,9 @@ public class Productos extends ConexionBD implements CRUDInterface {
                 this.cstmt=super.getConexion().prepareCall("call bd_sistema_login.sp_actualizar_Productos(?, ?, ?, ?, ?);");
                 this.cstmt.setInt(1, this.idProducto);
                 this.cstmt.setString(2, this.nombreProducto);
-                this.cstmt.setDouble(3, this.precioProducto);
+                this.cstmt.setString(3, this.descripcionProducto);
                 this.cstmt.setInt(4, this.stockProducto);
-                this.cstmt.setString(5, this.descripcionProducto);
+                this.cstmt.setDouble(5, this.precioProducto);
               
                 
                 //ejecutar el procedimiento almacenado
