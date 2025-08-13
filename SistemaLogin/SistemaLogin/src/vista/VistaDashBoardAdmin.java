@@ -31,7 +31,7 @@ public class VistaDashBoardAdmin extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         btnUsuarios = new javax.swing.JButton();
         btnRolUsuario = new javax.swing.JButton();
-        btnProductos = new javax.swing.JButton();
+        btnProductos1 = new javax.swing.JButton();
         panelEncabezado = new javax.swing.JPanel();
         panelContenedor = new javax.swing.JPanel();
 
@@ -69,18 +69,18 @@ public class VistaDashBoardAdmin extends javax.swing.JFrame {
         btnRolUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/RolUsuario.png"))); // NOI18N
         btnRolUsuario.setText("Rol Usuario");
         btnRolUsuario.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
-        panelMenu.add(btnRolUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 200, -1));
+        panelMenu.add(btnRolUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 200, -1));
 
-        btnProductos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/carrito.png"))); // NOI18N
-        btnProductos.setText("Productos");
-        btnProductos.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
-        btnProductos.addActionListener(new java.awt.event.ActionListener() {
+        btnProductos1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnProductos1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/carrito.png"))); // NOI18N
+        btnProductos1.setText("Productos");
+        btnProductos1.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
+        btnProductos1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProductosActionPerformed(evt);
+                btnProductos1ActionPerformed(evt);
             }
         });
-        panelMenu.add(btnProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 200, -1));
+        panelMenu.add(btnProductos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 200, -1));
 
         getContentPane().add(panelMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -112,9 +112,9 @@ public class VistaDashBoardAdmin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnUsuariosActionPerformed
 
-    private void btnProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProductosActionPerformed
+    private void btnProductos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProductos1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnProductosActionPerformed
+    }//GEN-LAST:event_btnProductos1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -152,7 +152,7 @@ public class VistaDashBoardAdmin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnProductos;
+    public javax.swing.JButton btnProductos1;
     public javax.swing.JButton btnRolUsuario;
     public javax.swing.JButton btnUsuarios;
     private javax.swing.JLabel jLabel1;

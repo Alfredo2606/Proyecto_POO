@@ -42,7 +42,8 @@ public class controladorDashBoardAdmin {
         //EVENTO PARA EL BOTON DEL ROL USUARIO
         this.vista.btnRolUsuario.addActionListener(e->mostrarPanelRolUsuario());
         //evento para el boton productos
-        this.vista.btnProductos.addActionListener(e->mostrarPanelProductos());
+        this.vista.btnProductos1.addActionListener(e->mostrarPanelProductos());
+        
     }
     //metodo para mostrar el panel usuarios
     public void mostrarPanelRolUsuario(){
@@ -89,7 +90,9 @@ public class controladorDashBoardAdmin {
         this.vista.panelContenedor.repaint();
         
     
-    }    
+    }  
+    
+     
     //metodo main
     public static void main(String[] args) {
         //crear controlador
