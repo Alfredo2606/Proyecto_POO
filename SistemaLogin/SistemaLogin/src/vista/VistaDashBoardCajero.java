@@ -40,7 +40,10 @@ public class VistaDashBoardCajero extends javax.swing.JFrame {
         panelMenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnGenerarVenta.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnGenerarVenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/cajero.png"))); // NOI18N
         btnGenerarVenta.setText("Generar Venta");
+        btnGenerarVenta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnGenerarVenta.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
         btnGenerarVenta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGenerarVentaActionPerformed(evt);
